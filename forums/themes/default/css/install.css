@@ -1,0 +1,259 @@
+/*
+ * ___________.__   __      _____          __
+ * \_   _____/|  | |  | __ /  _  \________/  |_  ____
+ *  |    __)_ |  | |  |/ //  /_\  \_  __ \   __\/ __ \
+ *  |        \|  |_|    </    |    \  | \/|  | \  ___/
+ * /_______  /|____/__|_ \____|__  /__|   |__|  \___  >
+ *         \/           \/       \/                 \/
+ * https://www.elkarte.net
+ */
+
+a:link, a:hover, a:visited {
+	text-decoration: underline;
+}
+
+/* These divisions wrap the forum sections when a forum width is set. */
+#wrapper, .frame {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: .8em;
+}
+
+#header .frame {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	height: 100px;
+	margin-bottom: 2em;
+	border-top: 2px solid;
+	border-top-color: var(--top_section_top_border);
+	border-bottom: 4px solid;
+	border-bottom-color: var(--top_section_bottom_border);
+	background-image: linear-gradient(to bottom, var(--primary_white), var(--primary_white_compliment));
+}
+
+#content_section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+h1.forumtitle {
+	font-family: verdana, tahoma, serif;
+	font-size: 2em;
+	padding: 0 0 0 1em;
+	color: #4B863C;
+	text-shadow: -1px -1px 0 var(--opacity30);
+}
+
+/* Tweak the logo */
+#logo {
+	margin: 0 1em 0 auto;
+}
+
+#inner_wrap {
+	min-height: 60px;
+	border-bottom: 1px solid var(--primary_border_bottom);
+}
+
+#inner_wrap .news {
+	width: 100%;
+	max-width: 100%;
+	height: 80px;
+	text-align: right;
+}
+
+#main_steps {
+	order: 2;
+	width: 50%;
+	padding: 0 0 1em 0;
+}
+
+#main_steps h2 {
+	font-size: var(--font20);
+	line-height: 1.6;
+	margin: 0 1em 0.5em 0;
+	color: var(--menu_button_active);
+	border-bottom: 1px solid var(--primary_border_bottom);
+}
+
+#main_steps ul {
+	line-height: 1.8;
+	margin: 0;
+	padding: 0 0.5em;
+	list-style: none;
+}
+
+#main_steps .stepdone {
+	color: var(--disabled_text);
+}
+
+#main_steps .stepdone::after {
+	padding: 0 8px;
+	content: "\2713";
+}
+
+#main_steps ul li.stepcurrent {
+	font-weight: bold;
+	color: var(--menu_text);
+}
+
+#main_steps ul li.stepwaiting {
+	color: var(--strong_text);
+}
+
+/* Hold multiple progress bars when needed */
+#progress_bars {
+	order: 1;
+	width: 50%;
+}
+
+/* General progress bars, done with id for easy JS */
+#progress_bar, #progress_bar_1, #substep_bar_div_2 {
+	font-size: var(--font18);
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 45px;
+	margin: 0.6em 0 0 4em;
+	border: 1px solid var(--primary_border);
+	border-radius: 6px;
+	background: var(--content-background);
+	box-shadow: 2px 2px 1px var(--box_shadow);
+}
+
+/* The display in the ID forces us to do this as hide by itself will not work */
+#progress_bar.hide, #progress_bar_1.hide, #substep_bar_div_2.hide, #commess.hide {
+	display: none;
+}
+
+/* The % indicator to the left of the progress bar */
+#overall_text, #step_text, #substep_text {
+	font-weight: bold;
+	position: absolute;
+	z-index: 2;
+	top: 0.5em;
+	left: -3.3em;
+	color: var(--body_text);
+}
+
+/* The color bars themselves, fit to height of the indicator */
+#overall_progress, #step_progress, #substep_progress {
+	height: 100%;
+	border-radius: 4px;
+	background: var(--gradient_bar_top);
+}
+
+#step_progress {
+	background: var(--progress_bar_blue);
+}
+
+#substep_progress {
+	background: var(--gradient_bar_bottom);
+}
+
+/* The text inside the bars, centered */
+.overall_progress, .progress {
+	position: absolute;
+	top: 8px;
+	left: calc(50% - 4em);
+}
+
+#main_screen {
+	padding: 1em 1em 0.5em 1em;
+}
+
+#main_screen h2 {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	color: var(--menu_button_active_2);
+}
+
+#footer_section {
+	min-height: 90px;
+	padding: 0 4em;
+}
+
+.content form div {
+	overflow: auto;
+	max-height: 560px;
+}
+
+.error_message {
+	padding: 0.5em;
+	color: var(--attention);
+}
+
+/* A somewhat more pronounced submit button */
+.content .button_submit, .content .linkbutton {
+	font-size: var(--font14);
+	font-weight: bold;
+	padding: .25em .5em;
+	text-decoration: none;
+	color: var(--hover_text);
+}
+
+.content .button_submit:hover, .content .linkbutton:hover {
+	text-decoration: none;
+	color: var(--menu_button_active_hover);
+}
+
+/* Lets get their attention */
+.content .errorbox, .content .warningbox {
+	font-size: var(--font15);
+	margin-top: 1em;
+}
+
+#time_elapsed {
+	clear: both;
+	margin: 1em 0.9em 0 0.9em;
+	padding: .4em .5em .5em .5em;
+	border: 1px solid var(--primary_border);
+	border-radius: 5px;
+	background: var(--primary_white_compliment);
+	box-shadow: 0 -2px 2px var(--opacity10);
+}
+
+/* Version check */
+#elkVersion, #installedVersion {
+	white-space: nowrap;
+}
+
+.step_table, .chmod_table {
+	width: 100%;
+	margin: 2em 0;
+	padding: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.chmod_table {
+	width: 520px;
+}
+
+.textbox {
+	vertical-align: top;
+}
+
+.ftp_setup {
+	font-family: monospace;
+	margin: 1.5em;
+}
+
+.notes {
+	font-size: smaller;
+	margin-bottom: 2em;
+}
+
+#commess {
+	font-weight: bold;
+	display: inline;
+}
+
+#debug_section {
+	overflow: auto;
+	height: 200px;
+}

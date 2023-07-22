@@ -1,0 +1,90 @@
+/* Common admin center classes.
+------------------------------------------------------- */
+#admin_form_wrapper {
+	border-color: var(--primary_border);
+}
+
+#support_resources, #credits_sections {
+	margin: 0;
+}
+
+.admincenter > #admin_form_wrapper {
+	margin-top: 0;
+}
+
+#admin_content .content {
+	background: var(--content-background);
+}
+
+#admin_main_section, .quick_tasks, #mod_main_section,
+#support_credits, #admin_newsletters,
+#core_features, #entry_form,
+#groupForm, #mailqueue_stats, #manage_maintenance,
+#new_group, #view_group, #admin_form_wrapper, .action_admin .generic_list_wrapper {
+	border: 1px solid var(--transparent);
+}
+
+#manage_boards, .admincenter, h3 + .infobox {
+	margin-top: .7em;
+}
+
+/* Styles for the manage boards section.
+------------------------------------------------- */
+#manage_boards h2 {
+	margin-bottom: .5em;
+}
+
+#manage_boards .post_group, #manage_boards .regular_members {
+	border-bottom-color: var(--dark_text);
+}
+
+/* This is the drag/drop placeholder, normally not visible */
+.ui-state-highlight {
+	border-color: var(--infobox_border) !important;
+	background-color: var(--content-background) !important;
+}
+
+/* Styles for the manage membergroups.
+------------------------------------------------- */
+.select_category, .select_all_box {
+	border-top-color: var(--primary_border_top);
+	border-bottom-color: var(--primary_border_bottom);
+}
+
+/* jQuery Dialog
+------------------------------------------------- */
+
+.ui-dialog {
+	border-color: var(--secondary_border);
+	background-color: var(--content-background);
+	box-shadow: 0 0 16px var(--opacity30);
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background-color: var(--category_header_grad_4)
+}
+
+.ui-widget-overlay {
+	opacity: 0.6;
+	background-color: var(--dark_grey_background);
+}
+
+/* alternate row colors on Modify Themes,Copy a template */
+.theme_options .content {
+	border-top-color: var(--primary_border_top);
+	border-bottom-color: var(--primary_border_bottom);
+	background: var(--content-background);
+}
+
+#quick_tasks li {
+	border-top-color: var(--transparent);
+	border-bottom-color: var(--transparent);
+}
+
+.sortable_smiley {
+	border-bottom-color: var(--primary_border)
+}
+
+#manage_maintenance div.content {
+	border-color: var(--transparent);
+}

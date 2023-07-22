@@ -1,0 +1,267 @@
+/* INTRODUCTION
+/* This variant is the standard, beSocial, Elkarte RTL theme.
+/* This is eye candy only. All the layout code is in rtl.css.
+/* ------------------------------------------------------- */
+/*
+/*		$GENERAL.............Global resets, clearfixes, etc.
+/*		$COMMON..............Common classes to drive you bonkers.
+/*		$BBC.................Quotes, code blocks, BBC styles.
+/*		$AJAX................The "loading" bar (quick edit, etc).
+/*
+/*		$MAIN................Forum header, wrapper, and footer.
+/*		$MENUS...............Main and secondary menus.
+/*		$LINKTREE............The breadcrumbs.
+/*		$BUTTONS.............Most button strips.
+/*		$PAGELINKS...........Page navigation links.
+/*
+/*		$TABLES..............Generic tables (memberlist, error log, etc).
+/*		$SETTINGS............Generic lists for settings pages.
+/*		$BOARDS..............Board index, sub-boards, and message index.
+/*
+/*		$TOPICS..............The display template (topic view), including send.
+/*		$EDITOR..............Main editor (posts, events, polls) and topic summary.
+/*		$MODERATE............Move topic, split topic, merge topic.
+/*
+/*		$PROFILE.............The profile areas.
+/*		$PERSONAL............The personal messages (PM) areas.
+/*		$CALENDAR............Wombats (and the calendar).
+/*		$STATISTICS..........The statistics centre.
+/*
+/*		$HELP................Help pages, help icons and pop-ups, tooltips.
+/*		$SEARCH..............Search pages, including memberlist search.
+/*		$LOGIN...............Login and registration, maintenance mode.
+/*
+/*		$ERRORS..............Error messages.
+/*		$PROGRESS............Nifty progress bars.
+/*		$MEDIA...............Experimental media queries.
+/* ------------------------------------------------------- */
+
+/* ---------------
+ *	$CONSTANTS
+ * ---------------
+ */
+:root {
+	/* flip right and left colors for RTL */
+	--primary_border_left: #CCCCCC;
+	--primary_border_right: #C7C7C7;
+
+	--secondary_border_left: #AFAFAF;
+	--secondary_border_right: #BFBFBF;
+}
+
+/* -------------------------------------------------------
+ *	$GENERAL
+ * -------------------------------------------------------
+ */
+
+/* Styles for main headers. */
+.category_header, .forum_category .category_header {
+	text-shadow: -1px 1px 0 var(--primary_white_compliment);
+}
+
+/* Styles for subsection headers */
+.secondary_header {
+	text-shadow: -1px 1px 0 var(--primary_white);
+}
+
+/* More little boxes on a hillside. */
+.warningbox {
+	border-right: 5px solid var(--warn);
+	border-left: 1px solid var(--warn);
+}
+
+.successbox {
+	border-right: 5px solid var(--pure_green);
+	border-left: 1px solid var(--pure_green);
+}
+
+.infobox {
+	border-right: 5px solid var(--infobox_border);
+	border-left: 1px solid var(--infobox_border);
+}
+
+.errorbox {
+	border-right: 5px solid var(--attention);
+	border-left: 1px solid var(--attention);
+}
+
+/* -------------------------------------------------------
+ * $BBC
+ * -------------------------------------------------------
+ */
+
+/* Extra quote styling */
+blockquote, .quoteheader {
+	box-shadow: -2px 2px 2px var(--box_shadow);
+}
+
+/* -------------------------------------------------------
+ *	$AJAX
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$MAIN
+ * -------------------------------------------------------
+ */
+#search_form .input_text {
+	border-right: 1px solid var(--secondary_border_right);
+	border-radius: 0 2px 2px 0;
+}
+
+/* -------------------------------------------------------
+ * $MENUS
+ * -------------------------------------------------------
+ */
+/* Level 1 Menu bar: link or button. General styling. */
+.linklevel1, .linklevel1:link, .linklevel1:visited, .quickbuttons .inline_mod_check {
+	border-right: 1px solid var(--secondary_border_right);
+	border-left: 1px solid var(--secondary_border_left);
+	box-shadow: -1px 1px 2px var(--box_shadow);
+}
+
+/* Level 1 button hover and focus effects. */
+.linklevel1:hover, .listlevel1:hover .linklevel1,
+.linklevel2:hover, .listlevel2:hover .linklevel2,
+.linklevel3:hover, .listlevel3:hover .linklevel3,
+#menu_sidebar .linklevel1:hover, #menu_sidebar .listlevel1:hover .linklevel1 {
+	border-right: 1px solid var(--secondary_border_right);
+	border-left: 1px solid var(--secondary_border_left);
+	box-shadow: -2px 1px 1px var(--opacity10) inset;
+}
+
+.poster li.poster_online:hover .linklevel1 {
+	border-right: 1px solid var(--secondary_border_right);
+	border-left: 1px solid var(--secondary_border_left);
+	box-shadow: -2px 1px 1px var(--opacity10) inset;
+}
+
+.poster li.poster_online .nolink {
+	border-right: 1px solid var(--secondary_border_right);
+	border-left: 1px solid var(--secondary_border_left);
+	box-shadow: -1px 1px 2px var(--box_shadow);
+}
+
+/* Common button styling. */
+input[type="submit"], .drop_area_fileselect_text, button[type="submit"], input[type="button"],
+	/* Anchors styled to look like buttons. */
+.linkbutton:link, .linkbutton:visited {
+	border-right: 1px solid var(--secondary_border_right);
+	border-left: 1px solid var(--secondary_border_left);
+	box-shadow: -1px 1px 2px var(--box_shadow);
+}
+
+/* Hover effects. */
+input[type="submit"]:hover, button[type="submit"]:hover, input[type="button"]:hover, .linkbutton:hover {
+	border-right-color: var(--primary_border_top);
+	border-left-color: var(--primary_border_left);
+	box-shadow: -2px 1px 1px var(--opacity10) inset;
+}
+
+.pm_indicator {
+	box-shadow: -1px 1px 2px var(--primary_background);
+}
+
+.button_indicator {
+	box-shadow: -1px 1px 2px var(--primary_background);
+}
+
+/* -------------------------------------------------------
+ *	$PAGELINKS
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$MAIN
+ * -------------------------------------------------------
+ */
+#forumtitle {
+	text-shadow: -1px 1px 2px var(--primary_white);
+}
+
+/* -------------------------------------------------------
+ *	$LINKTREE
+ * -------------------------------------------------------
+ */
+.linktree:not(:last-child):after {
+	transform: scale(1) rotate(-135deg);
+}
+
+/* -------------------------------------------------------
+ *	$BOARDICONS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$BOARDS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$TOPICS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$PROGRESS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$PROFILE
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$HELP
+ * -------------------------------------------------------
+ */
+
+.tooltip {
+	box-shadow: -3px 3px 3px var(--opacity30);
+}
+
+/* -------------------------------------------------------
+ *	$STATISTICS
+ * -------------------------------------------------------
+ */
+.stats.floatleft {
+	border-right-color: var(--transparent);
+	border-left: 1px solid var(--secondary_border_left);
+}
+
+/* -------------------------------------------------------
+ *	$TABS
+ * -------------------------------------------------------
+ */
+.ui-tabs .ui-tabs-nav li {
+	box-shadow: -2px 0 0 var(--opacity30);
+}
+
+/* -------------------------------------------------------
+ *	$MEDIA
+ * -------------------------------------------------------
+ */
+
+/* This one does 800 screens at default font size.
+   -------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 50em) {
+	#menu_sidebar {
+		box-shadow: -3px 3px 3px var(--opacity30);
+	}
+}
+
+/* This one does up to 540 screens.
+   -------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 33.750em) {
+	.topic_listing > li {
+		box-shadow: -3px 3px 6px var(--primary_white_compliment);
+	}
+
+	.forumposts .windowbg, .forumposts .windowbg2 {
+		box-shadow: -3px 3px 6px var(--box_shadow);
+	}
+}
