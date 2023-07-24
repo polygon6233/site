@@ -3311,6 +3311,8 @@ input, select, textarea {
 			z-index: 10000;
 		}
 
+
+
 			#nav.alt ul li {
 				margin: 0 0.175em;
 			}
@@ -3318,6 +3320,7 @@ input, select, textarea {
 				#nav.alt ul li a {
 					font-size: 0.9em;
 				}
+
 
 		@media screen and (max-width: 736px) {
 
