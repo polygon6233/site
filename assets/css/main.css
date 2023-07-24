@@ -3226,8 +3226,7 @@ input, select, textarea {
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
-		display: flex;
-		justify-content: flex-end;
+		position: relative;
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3294,10 +3293,10 @@ input, select, textarea {
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
-					padding: 0.5em 1em; /* Adjust padding as needed */
-					margin-left: 0.5em; /* Add some space between the last nav item and the button */
-					background-color: transparent; /* Remove background color for the button */
-					box-shadow: none; /* Remove box shadow for the button */
+					padding: 0.5em 1em;
+					margin-left: 0.5em;
+					background-color: transparent;
+					box-shadow: none;
 				}
 
 					#nav ul li a:hover {
@@ -3317,12 +3316,14 @@ input, select, textarea {
 						border-radius: 8px;
 					}
 
+					/* Style the button image inside the button */
 					.button img {
 						vertical-align: middle;
 						width: 16px; /* Adjust the size of the icon as needed */
 						height: 16px; /* Adjust the size of the icon as needed */
 					}
 
+					/* Adjust the button size for smaller screens if necessary */
 					@media screen and (max-width: 736px) {
 						.button {
 							height: 1.75em;
@@ -3333,6 +3334,14 @@ input, select, textarea {
 							width: 14px;
 							height: 14px;
 						}
+					}
+
+					/* Position the button to the right inside the nav bar */
+					.button-li {
+						position: absolute;
+						right: 1em; /* Adjust the position as needed */
+						top: 50%;
+						transform: translateY(-50%);
 					}
 
 		#nav.alt {
