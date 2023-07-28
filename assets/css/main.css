@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	color: #ffffff;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -92,6 +93,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		color: #ffffff;
 	}
 
 	*, *:before, *:after {
@@ -99,11 +101,13 @@ input, select, textarea {
 	}
 
 	body {
+		color: #ffffff;
 		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4a7771 0%, #e0a113 50%, #7aa291 100%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4a7771 0%, #e0a113 50%, #7aa291 100%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4a7771 0%, #e0a113 50%, #7aa291 100%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #4a7771 0%, #e0a113 50%, #7aa291 100%);
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -122,6 +126,7 @@ input, select, textarea {
 	body {
 		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
+		color: #ffffff;
 	}
 
 	body, input, select, textarea {
@@ -129,6 +134,7 @@ input, select, textarea {
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
+		color: #ffffff;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -198,36 +204,43 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 		letter-spacing: -0.025em;
+		color: #ffffff;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: #ffffff;
 			text-decoration: none;
 		}
 
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
+		color: #ffffff;
 	}
 
 	h2 {
 		font-size: 1.5em;
+		color: #ffffff;
 	}
 
 	h3 {
 		font-size: 1.25em;
+		color: #ffffff;
 	}
 
 	h4 {
 		font-size: 1.1em;
+		color: #ffffff;
 	}
 
 	h5 {
 		font-size: 0.9em;
+		color: #ffffff;
 	}
 
 	h6 {
 		font-size: 0.7em;
+		color: #ffffff;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3215,13 +3228,12 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #636363;
+		color: #ffffff;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: #2F2F2F;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3229,19 +3241,23 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: #ffffff;
+			background-color: #7aa291;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: #ffffff;
+			background-color: #7aa291;
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: #ffffff;
+			background-color: #7aa291;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			color: #ffffff;
+			background-color: #7aa291;
 		}
 
 		#nav blockquote {
@@ -3297,7 +3313,8 @@ input, select, textarea {
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #4a7771;
+						color: #ffffff;
 						box-shadow: none;
 					}
 
@@ -3305,7 +3322,8 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			color: #ffffff;
+			background-color: #2F2F2F;
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3325,11 +3343,13 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
+				background-color: #2F2F2F;
 				display: none;
 			}
 
 				#nav + #main {
 					padding-top: 0;
+					background-color: #2F2F2F;
 				}
 
 		}
@@ -3337,8 +3357,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #636363;
+		background-color: #2F2F2F;
+		color: #ffffff;
 		border-radius: 0.25em;
 	}
 
@@ -3382,7 +3402,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #ffffff !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3414,8 +3434,8 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #8cc9f0;
-				color: #ffffff !important;
+				background-color: #4a7771;
+				color: #FFFFFF; !important;
 				box-shadow: none;
 			}
 
@@ -3424,7 +3444,8 @@ input, select, textarea {
 				#main input[type="button"].primary:hover,
 				#main button.primary:hover,
 				#main .button.primary:hover {
-					background-color: #9acff2;
+					background-color: #7aa291;
+					color: #FFFFFF; !important;
 				}
 
 				#main input[type="submit"].primary:active,
@@ -3432,7 +3453,8 @@ input, select, textarea {
 				#main input[type="button"].primary:active,
 				#main button.primary:active,
 				#main .button.primary:active {
-					background-color: #7ec3ee;
+					background-color: #4a7771;
+					color: #FFFFFF; !important;
 				}
 
 				#main input[type="submit"].primary.icon:before,
@@ -3440,7 +3462,8 @@ input, select, textarea {
 				#main input[type="button"].primary.icon:before,
 				#main button.primary.icon:before,
 				#main .button.primary.icon:before {
-					color: #ffffff !important;
+					background-color: #4a7771;
+					color: #FFFFFF; !important;
 				}
 
 		#main label {
