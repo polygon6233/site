@@ -2651,10 +2651,12 @@ input, select, textarea {
 
 	header.major {
 		margin-bottom: 3em;
+		color: #ffffff;
 	}
 
 		header.major h2 {
 			font-size: 2em;
+			color: #ffffff;
 		}
 
 			header.major h2:after {
@@ -2664,25 +2666,30 @@ input, select, textarea {
 				height: 2px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
+				color: #ffffff;
 			}
 
 				section.special header.major h2:after, article.special header.major h2:after {
 					margin-left: auto;
 					margin-right: auto;
+					color: #ffffff;
 				}
 
 		header.major p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+			color: #ffffff;
 		}
 
 		header.major.special {
 			text-align: center;
+			color: #ffffff;
 		}
 
 			header.major.special h2:after {
 				margin-left: auto;
 				margin-right: auto;
+				color: #ffffff;
 			}
 
 	footer.major {
@@ -2693,19 +2700,23 @@ input, select, textarea {
 
 		header.major {
 			margin-bottom: 0;
+			color: #ffffff;
 		}
 
 			header.major h2 {
 				font-size: 1.5em;
+				color: #ffffff;
 			}
 
 			header.major p {
 				font-size: 1em;
 				letter-spacing: 0;
+				color: #ffffff;
 			}
 
 				header.major p br {
 					display: none;
+					color: #ffffff;
 				}
 
 		footer.major {
@@ -2716,6 +2727,7 @@ input, select, textarea {
 
 	header.major h2:after {
 		background-color: rgba(255, 255, 255, 0.35);
+		color: #ffffff;
 	}
 
 /* Table */
@@ -3234,8 +3246,8 @@ input, select, textarea {
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #2F2F2F;
-		border-top-left-radius: 0.25em;
-		border-top-right-radius: 0.25em;
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
 		cursor: default;
 		text-align: center;
 	}
@@ -3359,7 +3371,7 @@ input, select, textarea {
 	#main {
 		background-color: #2F2F2F;
 		color: #ffffff;
-		border-radius: 0.25em;
+		border-radius: 25px;
 	}
 
 		#main input, #main select, #main textarea {
@@ -3375,7 +3387,7 @@ input, select, textarea {
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #ffffff;
 		}
 
 		#main blockquote {
@@ -3576,6 +3588,7 @@ input, select, textarea {
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			color: #ffffff;
 		}
 
 		#main table tbody tr {
