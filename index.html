@@ -37,8 +37,8 @@
 
 							<script>
 								function confirmRedirect(event) {
-									if (confirm("Warning: You're about to leave this site. If you wish to continue, click 'Ok'.")) {
-										return true; // Allow the redirect
+									if (confirm("The forum is currently under maintenance.")) {
+										return false; // Allow the redirect
 									} else {
 										event.preventDefault(); // Prevent the default behavior (don't redirect)
 										return false;
@@ -104,7 +104,7 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li class="data-mgmt"><a href="generic.html" class="button">See how your data is managed</a></li>
-										<li><a href="https://polygon-forums.rf.gd" class="button">Check for downtime</a></li>
+										<li><a href="https://polygon-forums.rf.gd" onclick="return confirmRedirect(event)" class="button">Check for downtime</a></li>
 									</ul>
 								</footer>
 							</section>
