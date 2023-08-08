@@ -33,18 +33,8 @@
 							<li><a href="#development">Development</a></li>
 							<li><a href="#photography">Photography</a></li>
 							<li><a href="#get-started">Get Started</a></li>
-							<li class="nav-right"><a href="https://polygon-forums.rf.gd/" onclick="return confirmRedirect(event)"><img src="https://icons.veryicon.com/png/o/miscellaneous/cb/forum-16.png" style="width:50px;height:50px;-webkit-filter: invert(1);(1);"></a></li>
+							<li class="nav-right"><a href="https://polygon-forums.rf.gd/" class="forumlink"><img src="https://icons.veryicon.com/png/o/miscellaneous/cb/forum-16.png" style="width:50px;height:50px;-webkit-filter: invert(1);(1);"></a></li>
 
-							<script>
-								function confirmRedirect(event) {
-									if (confirm("The forum is currently under maintenance.")) {
-										return false; // Allow the redirect
-									} else {
-										event.preventDefault(); // Prevent the default behavior (don't redirect)
-										return false;
-									}
-								}
-							</script>
 						</ul>
 					</div>
 
@@ -104,7 +94,7 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li class="data-mgmt"><a href="generic.html" class="button">See how your data is managed</a></li>
-										<li><a href="https://polygon-forums.rf.gd" onclick="return confirmRedirect(event)" class="button">Check for downtime</a></li>
+										<li><a href="https://polygon-forums.rf.gd" class="forumlink button">Check for downtime</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -158,7 +148,7 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="#" class="button primary">Join our community</a></li>
-										<li><a href="https://polygon-forums.rf.gd" onclick="return confirmRedirect(event)" class="button">Explore our forum</a></li>
+										<li><a href="https://polygon-forums.rf.gd" class="forumlink button">Explore our forum</a></li>
 										<li><a href="https://instagram.com/polygon.digitalcreations" class="button">Follow our Instagram page</a></li>
 										<li><a href="#" class="button">Invite our Discord bot</a></li>
 									</ul>
@@ -178,7 +168,7 @@
 							<h2>Contact</h2>
 							<dl class="alt">
 								<dt>Email</dt>
-								<dd>blank</dd>
+								<dd>polygon</dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="https://twitter.com/@polygon6233" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
@@ -198,6 +188,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/load-buttons.min.js"></script>
 			<script src="https://kit.fontawesome.com/d5be33941a.js" crossorigin="anonymous"></script>
 
 	</body>
